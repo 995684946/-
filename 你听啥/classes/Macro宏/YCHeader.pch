@@ -1,0 +1,182 @@
+//
+//  YCHeader.pch
+//  你听啥
+//
+//  Created by anyurchao on 15/10/21.
+//  Copyright © 2015年 YC. All rights reserved.
+//
+
+#ifndef YCHeader_pch
+#define YCHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef __OPTIMIZE__
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define NSLog(...) {}
+
+#endif
+
+
+
+
+
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+//左侧的辅助view相对主屏幕宽度的百分比，这里设定为0.5
+#define SUBVIEW_WIDTH_RATIO .5
+#define kScreenBounds [UIScreen mainScreen].bounds
+#define Width self.view.frame.size.width
+#define Width1 self.frame.size.width
+
+
+#define FILEPATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+//PopMusicURL接口
+#define MusciUrlFirst @"http://mobile.ximalaya.com/m/category_tag_list?device=android&per_page=100&category=music&page=1&type=album"
+//#define MusicUrlSecond @"http://mobile.ximalaya.com/m/explore_album_list?category_name=music&condition=hot&device=android&page=3&per_page=20&status=0&tag_name="
+#define MusicUrlSecond @"http://mobile.ximalaya.com/mobile/discovery/v1/category/album?calcDimension=hot&categoryId=2&device=android&pageId=1&pageSize=20&tagName="
+
+#define MusicUrlThered @"http://mobile.ximalaya.com/mobile/others/ca/album/track/"
+#define MusicUrlTheredSmall @"/true/1/15"
+
+//PopSoundsURL接口
+#define SoundsUrlFirst @"http://mobile.ximalaya.com/m/category_tag_list?device=android&per_page=100&category=all&page=1&type=album"
+
+//#define SoundsUrlSecond @"http://mobile.ximalaya.com/m/explore_album_list?category_name=all&condition=hot&device=android&page=2&per_page=20&status=0&tag_name="
+#define SoundsUrlSecond @"http://mobile.ximalaya.com/mobile/discovery/v1/category/album?calcDimension=hot&categoryId=12&device=android&pageId=1&pageSize=20&tagName="
+
+
+#define SoundsUrlThered @"http://mobile.ximalaya.com/mobile/others/ca/album/track/"
+#define SoundsUrlTheredSmall @"/true/1/15"
+
+//PopOperaUrl接口
+#define OperaUrlFirst @"http://mobile.ximalaya.com/m/category_tag_list?device=android&per_page=100&category=opera&page=1&type=album"
+
+//#define OperaUrlSecond @"http://mobile.ximalaya.com/m/explore_album_list?category_name=opera&condition=hot&device=android&page=1&per_page=20&status=0&tag_name="
+
+#define OperaUrlSecond @"http://mobile.ximalaya.com/mobile/discovery/v1/category/album?calcDimension=hot&categoryId=0&device=android&pageId=1&pageSize=20&tagName="
+
+#define OperaUrlThered @"http://mobile.ximalaya.com/mobile/others/ca/album/track/"
+#define OperaUrlTheredSmall @"/true/1/15"
+
+
+
+
+
+//头像
+#import "sideHeadCell.h"
+//YCDelegate
+
+
+//作图
+#import "LeftSortsViewController.h"
+
+
+//PopMusic
+#import "PopMusic.h"
+#import "PopMusicChangeViewController.h"
+#import "PopMusicCollectionViewCell.h"
+#import "PopMusicCollectionViewController.h"
+#import "PopMusicTableViewController.h"
+#import "PopMusicTableViewCell.h"
+
+//PopMusic Second
+#import "PopMusicSecondTableViewController.h"
+#import "PopMusicSecondCell.h"
+
+//PopMusic Therd
+
+#import "PopMusicTherdTableViewController.h"
+#import "PopMusicTherdCell.h"
+#import "PopThered.h"
+#import "PopMusicTherd2.h"
+#import "PopMusicPlayViewController.h"
+
+
+
+#pragma mark popSounds
+#import "PopSoundsCollectionViewController.h"
+#import "PopSoundsFirstTableViewCell.h"
+#import "PopSoundsTableViewController.h"
+#import "PopSoundsViewController.h"
+#import "PopSoundsCollectionViewCell.h"
+
+//PopSounds Second
+
+#import "PopsoundsColloectionSecondsCell.h"
+#import "PopSoundsTableSecondTableViewController.h"
+
+//PopSounds Three
+#import "PopSoundThirdTableViewController.h"
+#import "PopSoundsTherdTableViewCell.h"
+
+
+
+
+#pragma mark PopOpera
+#import "PopOperaCollectionViewController.h"
+#import "PopOperaTableTableViewController.h"
+#import "PopOperaFirstCollectionViewCell.h"
+
+#import "PopOperaSecondTableViewController.h"
+
+#import "PopOperaTheredTableViewController.h"
+
+#pragma mark storeMusic
+#import "StoreMusicTableViewCell.h"
+#import "storeMusicTableViewController.h"
+
+#pragma mark Picture
+#import "RootViewController.h"
+#import "changeImageViewController.h"
+
+#pragma mark word
+#import "introduceViewController.h"
+
+
+#pragma mark 工具类
+#import "DataHelper.h"
+#import "playerHelper.h"
+#import "ImageLoad.h"
+#import "DBManager.h"
+
+
+
+
+
+
+
+
+#pragma mark 第三方
+
+#import "UIImageView+WebCache.h"
+#import "GMDCircleLoader.h"
+#import "TimerDisappearAlertView.h"
+
+
+//图片轮播期
+#import "SDCycleScrollView.h"
+#import "MyButton.h"
+#import "MJRefreshFooterView.h"
+#import "MJRefreshHeaderView.h"
+#import "UIScrollView+MJExtension.h"
+#import "UIScrollView+MJRefresh.h"
+//加载
+
+//左视图
+#import "LeftSlideViewController.h"
+//下载
+#import "storeMusicTableViewController.h"
+//清除缓存
+#import "FileService.h"
+//文字自适应
+#import "IntroduceScrollView.h"
+
+#endif /* YCHeader_pch */

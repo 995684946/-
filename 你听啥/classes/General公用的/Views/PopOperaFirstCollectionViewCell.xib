@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PopOperaFirst" id="gTV-IL-0wX" customClass="PopOperaFirstCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="242"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="242"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mz4-bG-GU4">
+                        <rect key="frame" x="0.0" y="40" width="190" height="202"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpo-eO-QOS">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="XOy-HE-SjW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="xpo-eO-QOS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="06x-Gx-WGZ"/>
+                <constraint firstAttribute="trailing" secondItem="xpo-eO-QOS" secondAttribute="trailing" id="V6V-dK-AB3"/>
+                <constraint firstAttribute="trailing" secondItem="Mz4-bG-GU4" secondAttribute="trailing" id="VLb-iu-TZt"/>
+                <constraint firstItem="Mz4-bG-GU4" firstAttribute="top" secondItem="xpo-eO-QOS" secondAttribute="bottom" id="afq-MV-mgW"/>
+                <constraint firstAttribute="bottom" secondItem="Mz4-bG-GU4" secondAttribute="bottom" id="jJJ-FK-gCg"/>
+                <constraint firstItem="xpo-eO-QOS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xye-st-2Vc"/>
+                <constraint firstItem="Mz4-bG-GU4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="z9s-PG-yEb"/>
+            </constraints>
+            <size key="customSize" width="190" height="242"/>
+            <connections>
+                <outlet property="ImgView" destination="Mz4-bG-GU4" id="j9f-id-NXN"/>
+                <outlet property="LabelName" destination="xpo-eO-QOS" id="vcs-sI-NLc"/>
+            </connections>
+            <point key="canvasLocation" x="338" y="234"/>
+        </collectionViewCell>
+    </objects>
+</document>

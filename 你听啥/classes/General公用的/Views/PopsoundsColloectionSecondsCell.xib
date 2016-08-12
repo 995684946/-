@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionID" id="gTV-IL-0wX" customClass="PopsoundsColloectionSecondsCell">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="228"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="228"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="orS-D7-wqH">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjo-Gm-e7W">
+                                <rect key="frame" x="0.0" y="0.0" width="235" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vv0-Wg-yT1">
+                                <rect key="frame" x="0.0" y="29" width="235" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="2Jj-rd-gLs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="ezI-Tn-i9z"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xkZ-CU-PNS">
+                        <rect key="frame" x="10" y="140" width="86" height="80"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gPG-DN-LCq">
+                                <rect key="frame" x="0.0" y="0.0" width="5140" height="20"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Audio_Frequency_Icon_128px_1129152_easyicon.net.png" translatesAutoresizingMaskIntoConstraints="NO" id="c3n-si-tE1">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Zvc-GK-xxx"/>
+                                            <constraint firstAttribute="width" constant="20" id="puZ-5c-wuU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音频数量" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaq-TB-49Y">
+                                        <rect key="frame" x="30" y="0.0" width="5110" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B7B-de-BRA">
+                                <rect key="frame" x="0.0" y="30" width="5140" height="20"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZFu-sx-lDv">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Q8z-Qn-KKH"/>
+                                            <constraint firstAttribute="height" constant="20" id="iCA-st-GE0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放数量" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-B4-SM8">
+                                        <rect key="frame" x="30" y="0.0" width="5110" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nin-Ve-PkM">
+                                <rect key="frame" x="0.0" y="60" width="5140" height="20"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01-refresh.png" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-iQ-Wej">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="5BN-Sd-6nw"/>
+                                            <constraint firstAttribute="width" constant="20" id="D2U-Y6-0Yx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最后更新时间" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHD-NN-e5W">
+                                        <rect key="frame" x="30" y="0.0" width="5110" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="xkZ-CU-PNS" firstAttribute="top" secondItem="Vv0-Wg-yT1" secondAttribute="bottom" constant="10" id="HW9-La-NzA"/>
+                <constraint firstAttribute="trailing" secondItem="orS-D7-wqH" secondAttribute="trailing" id="drD-7p-V5Z"/>
+                <constraint firstItem="xkZ-CU-PNS" firstAttribute="leading" secondItem="Vv0-Wg-yT1" secondAttribute="leading" constant="10" id="gg2-qW-gfU"/>
+                <constraint firstItem="orS-D7-wqH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="meV-PU-x7T"/>
+                <constraint firstItem="orS-D7-wqH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rRt-qs-Wtp"/>
+            </constraints>
+            <size key="customSize" width="235" height="228"/>
+            <connections>
+                <outlet property="ImgView" destination="Vv0-Wg-yT1" id="ovo-fD-XTl"/>
+                <outlet property="LabelCount" destination="iVx-B4-SM8" id="MZ5-kL-dtD"/>
+                <outlet property="LabelName" destination="sjo-Gm-e7W" id="jsV-SX-vwE"/>
+                <outlet property="LabelVolumCount" destination="vaq-TB-49Y" id="Ooq-zA-2qw"/>
+                <outlet property="labelLast" destination="PHD-NN-e5W" id="V48-8r-j11"/>
+            </connections>
+            <point key="canvasLocation" x="322.5" y="357"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="01-refresh.png" width="18" height="20"/>
+        <image name="Audio_Frequency_Icon_128px_1129152_easyicon.net.png" width="128" height="128"/>
+        <image name="play.png" width="20" height="20"/>
+    </resources>
+</document>

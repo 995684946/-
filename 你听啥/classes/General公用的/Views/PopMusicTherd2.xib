@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PopMusicTherd2" rowHeight="138" id="KGk-i7-Jjw" customClass="PopMusicTherd2">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nIE-Db-whP">
+                        <rect key="frame" x="13" y="18" width="101" height="101"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nIE-Db-whP" secondAttribute="height" multiplier="1:1" id="66E-JR-t6z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8E-GO-KR3">
+                        <rect key="frame" x="134" y="28" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="PopMusicTherd2" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfg-OA-Oa8">
+                        <rect key="frame" x="134" y="89" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nIE-Db-whP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="1bD-vY-AQ5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nIE-Db-whP" secondAttribute="bottom" constant="10" id="AZx-va-AiE"/>
+                    <constraint firstItem="gfg-OA-Oa8" firstAttribute="leading" secondItem="nIE-Db-whP" secondAttribute="trailing" constant="20" id="NGQ-jg-5jM"/>
+                    <constraint firstItem="m8E-GO-KR3" firstAttribute="leading" secondItem="nIE-Db-whP" secondAttribute="trailing" constant="20" id="UcD-zb-sVC"/>
+                    <constraint firstItem="nIE-Db-whP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="did-Ra-d6i"/>
+                    <constraint firstItem="gfg-OA-Oa8" firstAttribute="bottom" secondItem="nIE-Db-whP" secondAttribute="bottom" constant="-10" id="f5n-FT-ENB"/>
+                    <constraint firstItem="m8E-GO-KR3" firstAttribute="top" secondItem="nIE-Db-whP" secondAttribute="top" constant="10" id="icg-y6-zSj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imagView" destination="nIE-Db-whP" id="cS5-vH-qmK"/>
+                <outlet property="labelTaps" destination="gfg-OA-Oa8" id="T7g-dH-PMK"/>
+                <outlet property="labelText" destination="m8E-GO-KR3" id="6MV-7l-VEe"/>
+            </connections>
+            <point key="canvasLocation" x="360.5" y="291"/>
+        </tableViewCell>
+    </objects>
+</document>
